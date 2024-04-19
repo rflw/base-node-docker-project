@@ -1,0 +1,7 @@
+Dockerfile
+docker-compose.yml
+dockerCommands.sh
+node_modules/
+.git/
+.env
+README.md

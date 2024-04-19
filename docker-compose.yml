@@ -1,0 +1,14 @@
+version: '3'
+services:
+  node:
+    build:
+      context: .
+      args:
+        - CONTAINER_PORT=${CONTAINER_PORT}
+    ports:
+     - "${HOST_PORT}:${CONTAINER_PORT}"
+    volumes:
+     - .:/app
+    env_file:
+     - .env
+    command: ["npm", "start"]
