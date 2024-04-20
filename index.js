@@ -1,4 +1,3 @@
-// server.mjs
 import { createServer } from 'node:http';
 
 const HOST = process.env.CONTAINER_HOST ?? '0.0.0.0';
